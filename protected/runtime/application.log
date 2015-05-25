@@ -15,3 +15,39 @@ REQUEST_URI=/yii/facil/hola/index
 in C:\wamp\www\yii\facil\protected\views\hola\index.php (3)
 in C:\wamp\www\yii\facil\protected\controllers\HolaController.php (8)
 in C:\wamp\www\yii\facil\index.php (13)
+2015/05/25 20:33:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap.min.js".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/bootstrap.mi...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\facil\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facil/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/yii/facil/
+---
+2015/05/25 20:33:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery.js".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery.js')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\facil\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facil/js/jquery.js
+HTTP_REFERER=http://localhost/yii/facil/
+---
+2015/05/25 20:34:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery.js".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery.js')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\facil\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facil/js/jquery.js
+HTTP_REFERER=http://localhost/yii/facil/
+---
+2015/05/25 20:34:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap.min.js".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/bootstrap.mi...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\facil\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facil/js/bootstrap.min.js
+HTTP_REFERER=http://localhost/yii/facil/
+---
