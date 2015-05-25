@@ -1,0 +1,17 @@
+2015/05/25 15:21:11 [error] [php] Undefined variable: model (C:\wamp\www\yii\facil\protected\views\hola\index.php:3)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): HolaController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): HolaController->renderPartial()
+#2 C:\wamp\www\yii\facil\protected\controllers\HolaController.php(8): HolaController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): HolaController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): HolaController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): HolaController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\facil\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facil/hola/index
+in C:\wamp\www\yii\facil\protected\views\hola\index.php (3)
+in C:\wamp\www\yii\facil\protected\controllers\HolaController.php (8)
+in C:\wamp\www\yii\facil\index.php (13)
