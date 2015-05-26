@@ -24,7 +24,52 @@
     <link rel="shortcut icon" href="<?php echo yii::app()->theme->baseUrl;?>/ico/favicon.png">
   </head>
 
+  <body>
+
+<div class="navbar navbar-static-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">My app</a>
+
+      <div class="nav-collapse collapse pull-right">
+            <?php $this->widget('zii.widgets.CMenu',array(
+                'htmlOptions'=>array("class"=>"nav"),
+                    'items'=>array(
+                            array('label'=>'Home', 'url'=>array('/site/index')),
+                            array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+                            array('label'=>'Contact', 'url'=>array('/site/contact')),
+                            array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                            array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+                    ),
+            )); ?>
+      </div><!--/.nav-collapse -->
+
+    </div>
+  </div>
+</div>
+      
+<?php if(isset($this->breadcrumbs)and $this->breadcrumbs!==array()):?>
+<div class="container">
+    <div class="row-fluid">
+        <div class="span12">
+            <?php if(isset($this->breadcrumbs)):?>
+                    <?php $this->widget('zii.widgets.CBreadcrumbs', array(
+                            'links'=>$this->breadcrumbs,
+                    )); ?><!-- breadcrumbs -->
+            <?php endif?>            
+        </div>
+    </div>
+</div><!-- content -->
+<?php endif?>
+
 <?php echo $content;?>
+
+
   
 <footer class="footer bg-ft clearfix pd4">
     <div class="container">
