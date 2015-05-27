@@ -59,6 +59,7 @@
         <div class="span12">
             <?php if(isset($this->breadcrumbs)):?>
                     <?php $this->widget('zii.widgets.CBreadcrumbs', array(
+                            'htmlOptions'=>array('style' => "margin:10px 0;"),
                             'links'=>$this->breadcrumbs,
                     )); ?><!-- breadcrumbs -->
             <?php endif?>            

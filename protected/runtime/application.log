@@ -51,3 +51,11 @@ Stack trace:
 REQUEST_URI=/yii/facil/js/bootstrap.min.js
 HTTP_REFERER=http://localhost/yii/facil/
 ---
+2015/05/27 14:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\facil\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/facil/users
+---
