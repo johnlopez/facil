@@ -67,7 +67,10 @@
 </div><!-- content -->
 <?php endif?>
 
+
+
 <?php echo $content;?>
+
 
 
   
