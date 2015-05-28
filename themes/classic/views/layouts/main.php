@@ -68,7 +68,25 @@
 </div><!-- content -->
 <?php endif?>
 
-
+<?php if (($msgs = Yii::app()->user->getFlashes())!==null): ?>
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span12">
+        <?php foreach($msgs as $type=>$message):?>
+          <div class="alert alert-<?php echo $type?>">
+            <button type="button"
+                    class="close"
+                    dat-dismiss="alert">
+                    &times;
+            </button>
+            <h4><?php echo ucfirst($type)?>!</h4>
+            <?php echo $message ?>
+          </div>
+        <?php endforeach;?>  
+      </div>
+    </div>
+  </div>
+<?php endif;?>
 
 <?php echo $content;?>
 

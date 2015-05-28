@@ -10,6 +10,13 @@ class CountriesController extends Controller
 		$model->save();
 		*/
 
+		/* Mensaje de sesion para ocupar en el sistema¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+		Yii::app()->user->setFlash("success","Este es un mensaje de completado");
+		Yii::app()->user->setFlash("warning","Este es un mensaje de Alerta");		
+		Yii::app()->user->setFlash("info","Este es un mensaje de Informacion");
+		Yii::app()->user->setFlash("error","Este es un mensaje de Error");
+		*/
+
 		$countries=Countries::model()->findAll();
 		$this->render("index",array("countries"=>$countries));
 	}
@@ -34,6 +41,7 @@ class CountriesController extends Controller
 
 			if ($model->save()) 
 			{
+				Yii::app()->user->setFlash("success","Pais creado correctamente");
 				$this->redirect(array("index"));
 			}
 		}
@@ -50,6 +58,7 @@ class CountriesController extends Controller
 			$model->attributes=$_POST["Countries"];
 			if ($model->save()) 
 			{
+				Yii::app()->user->setFlash("success","Pais actualizado correctamente");
 				$this->redirect(array("index"));
 			}
 		}
