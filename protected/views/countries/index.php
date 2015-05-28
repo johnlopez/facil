@@ -2,9 +2,11 @@
 <?php echo CHtml::link("Crear",array("create")) ;?>
 <?php foreach ($countries as $data):?>
 	<h3><?php echo $data->name?> 
-		<span class="label label-<?php echo $data->status==1?"info":"warning";?>">	
-			<?php echo $data->status==1?"Enabled":"Disabled";?>
-		</span>
+		<a href="<?php echo $this->createUrl("enable",array("id"=>$data->id));?>">
+			<span class="label label-<?php echo $data->status==1?"info":"warning";?>">	
+				<?php echo $data->status==1?"Enabled":"Disabled";?>
+			</span>
+		</a>
 	</h3>
 <label class="badge badge-info"><?php echo $data->id;?></label>
 <?php echo CHtml::link("Actualizar",array("update","id"=>$data->id,"name"=>$data->name))?> |

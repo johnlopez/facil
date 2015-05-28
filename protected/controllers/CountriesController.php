@@ -67,4 +67,16 @@ class CountriesController extends Controller
 		$model=Countries::model()->findByPk($id);
 		$this->render("view",array("model"=>$model));
 	}
+
+	public function actionEnable($id)
+	{
+		$model=Countries::model()->findByPk($id);
+		if($model->status==1)
+			$model->status=0;
+		else
+			$model->status=1;
+		$model->save();
+		$this->redirect(array("index"));
+
+	}
 }
