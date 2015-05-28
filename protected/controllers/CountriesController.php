@@ -17,6 +17,49 @@ class CountriesController extends Controller
 		Yii::app()->user->setFlash("error","Este es un mensaje de Error");
 		*/
 
+
+		/*Implementacion de PATH ALIAS*/
+		//Con directorio Yii::import("application.directorio.Test1");
+		//Mas de un Archivo Yii::import("application.directorio.*");
+		Yii::import("application.Test1"); 
+		Yii::import("webroot.Test2");
+		Yii::import("ext.Test3");
+		//Yii::import("zii.Test4");
+		//Yii::import("me.Test5");//Yii::import("me.*");
+		
+		#Equivalente con Include del import de Yii framework
+		#include(Yii::etPathOfAlias("application")."/Test.php");
+
+		//Mostrando los PATH ALIAS disponibles por defecto
+		echo Yii::getPathOfAlias("application")."<br>";//protected
+		echo Yii::getPathOfAlias("webroot")."<br>";//root o carpeta raiz
+		echo Yii::getPathOfAlias("ext")."<br>";//protected/extencions
+		echo Yii::getPathOfAlias("zii")."<br>";//framework/zii
+		
+		$me1=new Test1;
+		echo $me1->hi();
+		echo "<br>";
+
+		$me2=new Test2;
+		echo $me2->hi();
+		echo "<br>";
+
+		$me3=new Test3;
+		echo $me3->hi();
+		echo "<br>";
+
+		/*
+		$me4=new Test4;
+		echo $me4->hi();
+		echo "<br>";
+
+		$me5=new Test5;
+		echo $me5->hi();
+		echo "<br>";
+		*/
+		
+		
+
 		$countries=Countries::model()->findAll();
 		$this->render("index",array("countries"=>$countries));
 	}

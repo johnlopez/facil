@@ -270,3 +270,111 @@ REQUEST_URI=/yii/facil/countries/index
 in C:\xampp\htdocs\yii\facil\protected\views\countries\index.php (10)
 in C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php (14)
 in C:\xampp\htdocs\yii\facil\index.php (13)
+2015/05/28 23:29:29 [error] [php] include(Test.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php(34): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CountriesController->actionIndex()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CountriesController->runAction()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CountriesController->run()
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii\facil\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facil/countries/index
+in C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php (34)
+in C:\xampp\htdocs\yii\facil\index.php (13)
+2015/05/29 00:03:00 [error] [exception.CException] exception 'CException' with message 'Alias "me.Test5" is invalid. Make sure it points to an existing directory or file.' in C:\xampp\htdocs\yii\framework\YiiBase.php:348
+Stack trace:
+#0 C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php(28): YiiBase::import('me.Test5')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CountriesController->actionIndex()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('countries/index')
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii\facil\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/facil/countries/index
+HTTP_REFERER=http://localhost/yii/facil/countries/update/2?name=Chile
+---
+2015/05/29 00:06:11 [error] [exception.CException] exception 'CException' with message 'Alias "me.Test5" is invalid. Make sure it points to an existing directory or file.' in C:\xampp\htdocs\yii\framework\YiiBase.php:348
+Stack trace:
+#0 C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php(28): YiiBase::import('me.Test5')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CountriesController->actionIndex()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('countries/index')
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii\facil\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/facil/countries/index
+HTTP_REFERER=http://localhost/yii/facil/countries/update/2?name=Chile
+---
+2015/05/29 00:08:17 [error] [php] include(Test5.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php(53): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CountriesController->actionIndex()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CountriesController->runAction()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CountriesController->run()
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii\facil\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facil/countries/index
+in C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php (53)
+in C:\xampp\htdocs\yii\facil\index.php (13)
+2015/05/29 00:08:31 [error] [php] include(Test5.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php(53): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CountriesController->actionIndex()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CountriesController->runAction()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CountriesController->run()
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii\facil\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facil/countries/index
+in C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php (53)
+in C:\xampp\htdocs\yii\facil\index.php (13)
+2015/05/29 00:09:04 [error] [php] include(Test5.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php(53): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CountriesController->actionIndex()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CountriesController->runAction()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CountriesController->run()
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii\facil\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facil/countries/index
+in C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php (53)
+in C:\xampp\htdocs\yii\facil\index.php (13)
+2015/05/29 00:11:44 [error] [php] Undefined variable: me (C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php:38)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(286): CountriesController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CountriesController->run()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\yii\facil\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facil/countries/index
+in C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php (38)
+in C:\xampp\htdocs\yii\facil\index.php (13)
+2015/05/29 00:11:47 [error] [php] Undefined variable: me (C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php:38)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(286): CountriesController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CountriesController->run()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\yii\facil\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facil/countries/index
+in C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php (38)
+in C:\xampp\htdocs\yii\facil\index.php (13)

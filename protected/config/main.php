@@ -3,6 +3,9 @@
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
+//creando alias en carpeta raiz de yii
+Yii::setPathOfAlias('me',dirname(__FILE__)."/../../../micarpeta");
+
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
