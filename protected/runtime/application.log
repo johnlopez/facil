@@ -188,3 +188,68 @@ Stack trace:
 #34 {main}
 REQUEST_URI=/yii/facil/usuario
 ---
+2015/05/28 12:29:52 [error] [php] include(CAtiveForm.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\YiiBase.php(303): class_exists()
+#2 C:\xampp\htdocs\yii\framework\web\CWidgetFactory.php(146): import()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(197): CountriesController->createWidget()
+#5 C:\xampp\htdocs\yii\facil\protected\views\countries\create.php(2): CountriesController->beginWidget()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CountriesController->renderInternal()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): CountriesController->renderFile()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(782): CountriesController->renderPartial()
+#10 C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php(20): CountriesController->render()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CountriesController->actionCreate()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(286): CountriesController->runAction()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CountriesController->run()
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\facil\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facil/countries/create
+in C:\xampp\htdocs\yii\facil\protected\views\countries\create.php (2)
+in C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php (20)
+in C:\xampp\htdocs\yii\facil\index.php (13)
+2015/05/28 12:32:39 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "texField".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\facil\protected\views\countries\create.php(4): CComponent->__call('texField', Array)
+#1 C:\xampp\htdocs\yii\facil\protected\views\countries\create.php(4): CActiveForm->texField(Object(Countries), 'name')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#6 C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php(20): CController->render('create', Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CountriesController->actionCreate()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('countries/creat...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\facil\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/facil/countries/create
+---
+2015/05/28 12:32:44 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "texField".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\facil\protected\views\countries\create.php(4): CComponent->__call('texField', Array)
+#1 C:\xampp\htdocs\yii\facil\protected\views\countries\create.php(4): CActiveForm->texField(Object(Countries), 'name')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#6 C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php(20): CController->render('create', Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CountriesController->actionCreate()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('countries/creat...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\facil\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/facil/countries/create
+---
