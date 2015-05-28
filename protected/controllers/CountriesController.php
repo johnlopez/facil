@@ -61,4 +61,10 @@ class CountriesController extends Controller
 		$model=Countries::model()->deleteByPk($id);
 		$this->redirect(array("index"));
 	}
+
+	public function actionView($id)
+	{
+		$model=Countries::model()->findByPk($id);
+		$this->render("view",array("model"=>$model));
+	}
 }
