@@ -253,3 +253,20 @@ Stack trace:
 #15 {main}
 REQUEST_URI=/yii/facil/countries/create
 ---
+2015/05/28 16:18:43 [error] [php] Object of class Countries could not be converted to string (C:\xampp\htdocs\yii\facil\protected\views\countries\index.php:10)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): CountriesController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): CountriesController->renderPartial()
+#2 C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php(14): CountriesController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CountriesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): CountriesController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CountriesController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\facil\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facil/countries/index
+in C:\xampp\htdocs\yii\facil\protected\views\countries\index.php (10)
+in C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php (14)
+in C:\xampp\htdocs\yii\facil\index.php (13)
