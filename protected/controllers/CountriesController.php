@@ -21,6 +21,7 @@ class CountriesController extends Controller
 		/*Implementacion de PATH ALIAS*/
 		//Con directorio Yii::import("application.directorio.Test1");
 		//Mas de un Archivo Yii::import("application.directorio.*");
+		/*
 		Yii::import("application.Test1"); 
 		Yii::import("webroot.Test2");
 		Yii::import("ext.Test3");
@@ -31,7 +32,7 @@ class CountriesController extends Controller
 		#include(Yii::etPathOfAlias("application")."/Test.php");
 
 		//Mostrando los PATH ALIAS disponibles por defecto
-		echo Yii::getPathOfAlias("application")."<br>";//protected
+		/*echo Yii::getPathOfAlias("application")."<br>";//protected
 		echo Yii::getPathOfAlias("webroot")."<br>";//root o carpeta raiz
 		echo Yii::getPathOfAlias("ext")."<br>";//protected/extencions
 		echo Yii::getPathOfAlias("zii")."<br>";//framework/zii
@@ -48,7 +49,7 @@ class CountriesController extends Controller
 		echo $me3->hi();
 		echo "<br>";
 
-		/*
+		
 		$me4=new Test4;
 		echo $me4->hi();
 		echo "<br>";
@@ -58,7 +59,23 @@ class CountriesController extends Controller
 		echo "<br>";
 		*/
 		
+		/*Conociendo el componente request */
+		//las siguientes 3 linas no hacen nada
+		#$test=Yii::app()->request->getPost("test","defaultValue");// $_POST["test"]; equivalente a isset($_POST["test"]);
+		#$test=Yii::app()->request->getQuery("test","defaultValue");// $_GET["test"];
+		#$test=Yii::app()->request->getParam("test","defaultValue");// determina si es $_POST["test"] ó $_GET["test"];
 		
+		echo Yii::app()->request->baseUrl."<br>";//muestra la url base de la aplicacion
+		echo Yii::app()->request->requestUri."<br>";//muestra la Url de la peticion actual
+		echo Yii::app()->request->pathInfo."<br>";//ruta actual despues del base Url
+		echo Yii::app()->request->urlReferrer."<br>";//Url anterior
+		echo Yii::app()->request->queryString."<br>";//probar esta Url localhost/yii/facil/countries/?codigofacilito=1
+		echo Yii::app()->request->userAgent."<br>";//muestra que navegador se esta usando
+		echo Yii::app()->request->userHost."<br>";//direccion del servidor
+		echo Yii::app()->request->userHostAddress."<br>";//direccion ip del cliente
+		#Yii::app()->request->sendFile()."<br>"; //exportar a excel
+		#Yii::app()->request->redirect("/site/index")."<br>"; redirect para usar fuera del controlador
+		#$this->redirect(array("/site/index","id"=>2));//redirect propio del controlador
 
 		$countries=Countries::model()->findAll();
 		$this->render("index",array("countries"=>$countries));
