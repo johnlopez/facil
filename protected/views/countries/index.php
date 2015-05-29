@@ -1,5 +1,6 @@
 <h1> Countries </h1>
-<?php echo CHtml::link("Crear",array("create")) ;?>
+<?php echo CHtml::link("Crear",array("create"),array("class"=>"btn")) ;?> 
+<?php echo CHtml::link("Excel",array("index","excel"=>1),array("class"=>"btn")) ;?>
 <?php foreach ($countries as $data):?>
 	<h3><?php echo $data->name?> 
 		<a href="<?php echo $this->createUrl("enable",array("id"=>$data->id));?>">

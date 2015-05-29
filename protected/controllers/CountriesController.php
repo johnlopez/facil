@@ -64,7 +64,7 @@ class CountriesController extends Controller
 		#$test=Yii::app()->request->getPost("test","defaultValue");// $_POST["test"]; equivalente a isset($_POST["test"]);
 		#$test=Yii::app()->request->getQuery("test","defaultValue");// $_GET["test"];
 		#$test=Yii::app()->request->getParam("test","defaultValue");// determina si es $_POST["test"] ó $_GET["test"];
-		
+		/*
 		echo Yii::app()->request->baseUrl."<br>";//muestra la url base de la aplicacion
 		echo Yii::app()->request->requestUri."<br>";//muestra la Url de la peticion actual
 		echo Yii::app()->request->pathInfo."<br>";//ruta actual despues del base Url
@@ -73,9 +73,22 @@ class CountriesController extends Controller
 		echo Yii::app()->request->userAgent."<br>";//muestra que navegador se esta usando
 		echo Yii::app()->request->userHost."<br>";//direccion del servidor
 		echo Yii::app()->request->userHostAddress."<br>";//direccion ip del cliente
+		*/
 		#Yii::app()->request->sendFile()."<br>"; //exportar a excel
 		#Yii::app()->request->redirect("/site/index")."<br>"; redirect para usar fuera del controlador
 		#$this->redirect(array("/site/index","id"=>2));//redirect propio del controlador
+
+		/*Exportando un Archivo a Excel*/
+		//Prueba de Excel
+		//Yii::app()->request->sendFile("test.xls","<table><tr><td>Este es un texto de prueba</td><td>Este es un texto de prueba</td></tr></table>")."<br>"; //exportar a excel
+		//Desde una Base de datos
+		
+		if(isset($_GET["excel"]))
+		{
+			$model=Countries::model()->findAll();
+			$content=$this->renderPartial("excel",array("model"=>$model),true);
+			Yii::app()->request->sendFile("miExcel.xls",$content)."<br>"; //exportar a excel
+		}
 
 		$countries=Countries::model()->findAll();
 		$this->render("index",array("countries"=>$countries));
