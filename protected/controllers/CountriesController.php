@@ -82,6 +82,17 @@ class CountriesController extends Controller
 		//Prueba de Excel
 		//Yii::app()->request->sendFile("test.xls","<table><tr><td>Este es un texto de prueba</td><td>Este es un texto de prueba</td></tr></table>")."<br>"; //exportar a excel
 		//Desde una Base de datos
+
+		/*Probando Auth Manager*/
+		#Yii::app()->authManager->createRole("admin");//crar Rol de manera Estatica
+		#Yii::app()->authManager->assign("admin",1);//asigna Rol de manera Estatica al usuario con ID 1
+		if (Yii::app()->user->checkAccess("admin")) 
+		{
+			echo "Hola tengo acceso desde user componente";
+		}
+		echo Yii::app()->user->id;
+
+
 		
 		if(isset($_GET["excel"]))
 		{
