@@ -378,3 +378,148 @@ Stack trace:
 REQUEST_URI=/yii/facil/countries/index
 in C:\xampp\htdocs\yii\facil\protected\controllers\CountriesController.php (38)
 in C:\xampp\htdocs\yii\facil\index.php (13)
+2015/05/29 18:15:07 [error] [php] include(User.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\yii\facil\protected\components\UserIdentity.php(37): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\facil\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#3 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute()
+#4 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CInlineValidator->validate()
+#5 C:\xampp\htdocs\yii\facil\protected\controllers\SiteController.php(95): LoginForm->validate()
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\yii\facil\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facil/site/login
+in C:\xampp\htdocs\yii\facil\protected\components\UserIdentity.php (37)
+in C:\xampp\htdocs\yii\facil\protected\models\LoginForm.php (52)
+in C:\xampp\htdocs\yii\facil\protected\controllers\SiteController.php (95)
+2015/05/29 18:15:19 [error] [php] include(User.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\yii\facil\protected\components\UserIdentity.php(37): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\facil\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#3 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute()
+#4 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CInlineValidator->validate()
+#5 C:\xampp\htdocs\yii\facil\protected\controllers\SiteController.php(95): LoginForm->validate()
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\yii\facil\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/facil/site/login
+in C:\xampp\htdocs\yii\facil\protected\components\UserIdentity.php (37)
+in C:\xampp\htdocs\yii\facil\protected\models\LoginForm.php (52)
+in C:\xampp\htdocs\yii\facil\protected\controllers\SiteController.php (95)
+2015/05/29 18:19:41 [error] [exception.CException] exception 'CException' with message 'UserIdentity and its behaviors do not have a method or closure named "serState".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\facil\protected\components\UserIdentity.php(46): CComponent->__call('serState', Array)
+#1 C:\xampp\htdocs\yii\facil\protected\components\UserIdentity.php(46): UserIdentity->serState('email', 'jlopez@utemvirt...')
+#2 C:\xampp\htdocs\yii\facil\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\yii\facil\protected\controllers\SiteController.php(95): CModel->validate()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\facil\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/facil/site/login
+HTTP_REFERER=http://localhost/yii/facil/site/login
+---
+2015/05/29 18:19:54 [error] [exception.CException] exception 'CException' with message 'UserIdentity and its behaviors do not have a method or closure named "serState".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\facil\protected\components\UserIdentity.php(46): CComponent->__call('serState', Array)
+#1 C:\xampp\htdocs\yii\facil\protected\components\UserIdentity.php(46): UserIdentity->serState('email', 'jlopez@utemvirt...')
+#2 C:\xampp\htdocs\yii\facil\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\yii\facil\protected\controllers\SiteController.php(95): CModel->validate()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\facil\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/facil/site/login
+HTTP_REFERER=http://localhost/yii/facil/site/login
+---
+2015/05/29 18:23:43 [error] [exception.CException] exception 'CException' with message 'UserIdentity and its behaviors do not have a method or closure named "serState".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\facil\protected\components\UserIdentity.php(46): CComponent->__call('serState', Array)
+#1 C:\xampp\htdocs\yii\facil\protected\components\UserIdentity.php(46): UserIdentity->serState('email', 'jlopez@utemvirt...')
+#2 C:\xampp\htdocs\yii\facil\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\yii\facil\protected\controllers\SiteController.php(95): CModel->validate()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\facil\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/facil/site/login
+HTTP_REFERER=http://localhost/yii/facil/site/login
+---
+2015/05/29 18:23:52 [error] [exception.CException] exception 'CException' with message 'UserIdentity and its behaviors do not have a method or closure named "serState".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\facil\protected\components\UserIdentity.php(46): CComponent->__call('serState', Array)
+#1 C:\xampp\htdocs\yii\facil\protected\components\UserIdentity.php(46): UserIdentity->serState('email', 'jlopez@utemvirt...')
+#2 C:\xampp\htdocs\yii\facil\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\yii\facil\protected\controllers\SiteController.php(95): CModel->validate()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\facil\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/facil/site/login
+HTTP_REFERER=http://localhost/yii/facil/site/login
+---
+2015/05/29 18:26:57 [error] [exception.CException] exception 'CException' with message 'UserIdentity and its behaviors do not have a method or closure named "serState".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\facil\protected\components\UserIdentity.php(46): CComponent->__call('serState', Array)
+#1 C:\xampp\htdocs\yii\facil\protected\components\UserIdentity.php(46): UserIdentity->serState('email', 'jlopez@utemvirt...')
+#2 C:\xampp\htdocs\yii\facil\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\yii\facil\protected\controllers\SiteController.php(95): CModel->validate()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\facil\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/facil/site/login
+HTTP_REFERER=http://localhost/yii/facil/site/login
+---
