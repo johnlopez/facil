@@ -36,7 +36,7 @@ class UsuarioController extends Controller
 				'roles'=>array('admin'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete','assign'),
 				'roles'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -143,6 +143,15 @@ class UsuarioController extends Controller
 		));
 	}
 
+	public function actionAssign($id)
+	{
+		if(Yii::app()->authManager->checkAccess($_GET["item"],$id))
+			Yii::app()->authManager->revoke($_GET["item"],$id);
+		else
+			Yii::app()->authManager->assign($_GET["item"],$id);
+		$this->redirect(array("view","id"=>$id));
+	}
+
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
@@ -170,4 +179,6 @@ class UsuarioController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+
 }
